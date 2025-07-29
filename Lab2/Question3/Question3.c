@@ -7,8 +7,8 @@ void main(){
     int col1;
 
     printf("Enter number of Rows, Columns: ");
-    scanf("%d, %d",&row, &col);
-    int *matrix1 = (int *)malloc(row*col*sizeof(int));
+    scanf("%d, %d",&row1, &col1);
+    int *matrix1 = (int *)malloc(row1*col1*sizeof(int));
 
     for (int i = 0; i < row1; i++){
         for(int j = 0; j < col1; j++){
@@ -31,7 +31,7 @@ void main(){
     int col2;
 
     printf("Enter number of Rows, Columns: ");
-    scanf("%d, %d",&row, &col);
+    scanf("%d, %d",&row2, &col2);
     int *matrix2 = (int *)malloc(row2 * col2 *sizeof(int));
 
     for (int i = 0; i < row2; i++){
