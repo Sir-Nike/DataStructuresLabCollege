@@ -15,10 +15,11 @@ int main(){
     }
 
     bubble_sort(arr, n);
-
+    printf("sorted array: \n");
     for(int i = 0; i < n; i++){
-        printf("%d: %d\n",i,arr[i]);
+        printf("%d\t",arr[i]);
     }
+    printf("\n");
 }
 
 void bubble_sort(int* arr, int n){
@@ -29,6 +30,7 @@ void bubble_sort(int* arr, int n){
                 int swap = arr[j];
                 arr[j] = arr[j+1];
                 arr[j+1] = swap;
+            }
         }
     }
 }

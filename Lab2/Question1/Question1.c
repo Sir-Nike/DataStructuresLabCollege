@@ -14,14 +14,13 @@ int main(){
     }
 
     int* arr = malloc(n*sizeof(int));
-    for (int i = 0; i < n; i++){
-        printf("Enter Number in %d index: ",i);
-        scanf("%d",arr+i);
-    }
+    printf("Enter elements: ");
+    for (int i = 0; i < n; i++) scanf("%d",arr+i);
 
     int smallest = smallest_element(arr, n);
     printf("Smallest element of array is: %d\n",smallest);
-    free(arr)
+    free(arr);
+    return 0;
 }
 
 int smallest_element(int* arr, int n){

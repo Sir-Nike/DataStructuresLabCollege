@@ -13,9 +13,11 @@ int main(){
         scanf("%d",&arr[i]);
     }
     selection_sort(arr, n);
+    printf("sorted array: \n");
     for(int i = 0; i < n; i++){
-        printf("%d: %d\n",i,arr[i]);
+        printf("%d\t",arr[i]);
     }
+    printf("\n");
 }
 
 void selection_sort(int* arr, int n){
